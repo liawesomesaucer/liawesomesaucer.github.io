@@ -1,0 +1,48 @@
+// Base styles
+section {
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+}
+
+h1,
+h2 {
+  font-family: $header-font-family;
+  font-size: 48px;
+  color: $WATERLOO;
+  font-weight: 300;
+  letter-spacing: 1.54px;
+  margin: 45px 0px 35px -3px;
+}
+
+h1 {
+  font-size: 64px;
+  color: $PUERTO-RICO;
+}
+
+p,
+li,
+a,
+span {
+  font-family: $text-font-family;
+  font-size: 18px;
+  letter-spacing: 0.58px;
+  margin-bottom: 4px;
+}
+
+p,
+li,
+span {
+  color: $WATERLOO-LIGHT;
+}
+
+.vi-container {
+  max-width: 1000px;
+}
