@@ -10,8 +10,6 @@
 }
 
 .vi-post {
-  // grid-column: span 2;
-
   &__date {
     position: relative;
     top: -35px;
@@ -33,5 +31,15 @@
     p {
       margin-top: 10px;
     }
+  }
+  &__home-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &__banner {
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 60px;
   }
 }

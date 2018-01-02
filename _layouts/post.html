@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<div class="container-fluid vi-container">
+{% if page.image %}
+  <div
+    class="vi-post__banner"
+    style="background-image: url('/public/images/{{ page.image }}');
+           background-size: cover;
+           background-position: center;"
+  ></div>
+{% endif %}
+<div class="container-fluid vi-container vi-container__post">
+  <div class="vi-post__home-link"><a href="/">Home</a></div>
   <h1 style="color: {{ page.color }}">{{ page.title }}</h1>
   {{ content }}
 </div>

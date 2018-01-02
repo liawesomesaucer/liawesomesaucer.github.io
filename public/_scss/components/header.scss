@@ -1,0 +1,11 @@
+.header {
+  &__main,
+  &__secondary {
+    font-family: $header-font-family;
+    color: $WATERLOO;
+    margin: 45px 0px 35px -3px;
+  }
+  &__main {
+    color: $PUERTO-RICO;
+  }
+}

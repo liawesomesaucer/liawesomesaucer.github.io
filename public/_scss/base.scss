@@ -10,21 +10,18 @@ h4,
 h5,
 h6 {
   font-family: $header-font-family;
+  margin: 20px 0 5px 0;
 }
 
 h1,
 h2 {
-  font-family: $header-font-family;
-  font-size: 48px;
-  color: $WATERLOO;
   font-weight: 300;
+  font-size: 48px;
   letter-spacing: 1.54px;
-  margin: 45px 0px 35px -3px;
 }
 
 h1 {
   font-size: 64px;
-  color: $PUERTO-RICO;
 }
 
 p,
@@ -43,6 +40,22 @@ span {
   color: $WATERLOO-LIGHT;
 }
 
+img {
+  max-width: 100%;
+}
+
 .vi-container {
   max-width: 1000px;
+
+  &__post {
+    max-width: 800px;
+    padding-bottom: 40px;
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 15px;
+      color: $WATERLOO;
+    }
+  }
 }

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Design at UCSD
+title: Building designatucsd.org
 tile_image: designatucsd_front.png
 image: designatucsd.png
 tags: 
-- HTML/CSS
-- JQuery
+- HTML
+- CSS
 - Bootstrap
 link: designatucsd.org
 github: https://github.com/designucsd/designucsd.github.io
