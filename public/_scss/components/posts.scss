@@ -2,22 +2,50 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 20px 350px 20px 350px;
     grid-column-gap: 2%;
-    grid-row-gap: 80px;
-    padding-top: 35px;
+    grid-row-gap: 20px;
+    padding-top: 15px;
+
+    @media screen and (max-width: $BREAKPOINT-SM) {
+      display: block !important;
+    }
   }
 }
 
 .vi-post {
-  &__date {
+  &__wrapper {
     position: relative;
-    top: -35px;
+
+    li {
+      margin-left: 30px;
+    }
   }
   &__featured {
     &-image {
       grid-column-start: 1;
       grid-column-end: 3;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 50px;
+
+      a {
+        position: absolute;
+        transition: all .5s;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover a {
+        transform: scale(1.1);
+      }
+
+      @media screen and (max-width: $BREAKPOINT-SM) {
+        margin-top: 10px;
+        min-height: 300px;
+        margin-bottom: 20px;
+      }
     }
     &-text {
       grid-column-start: 3;
@@ -25,6 +53,15 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-bottom: 50px;
+
+      h4 {
+        font-weight: normal;
+      }
+
+      @media screen and (max-width: $BREAKPOINT-SM) {
+        padding-bottom: 0;
+      }
     }
   }
   &__links {
@@ -32,14 +69,27 @@
       margin-top: 10px;
     }
   }
-  &__home-link {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  &__nav {
+    position: fixed;
+    height: 160px;
+    background-color: $WHITE;
+    top: -100px;
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 20px $WATERLOO;
+    text-align: center;
+
+    a {
+      line-height: 60px;
+      font-family: $header-font-family;
+      color: $PUERTO-RICO;
+    }
   }
   &__banner {
     width: 100%;
     min-height: 500px;
     margin-bottom: 60px;
+    margin-top: 60px;
   }
 }

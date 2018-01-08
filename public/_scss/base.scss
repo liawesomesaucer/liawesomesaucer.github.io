@@ -11,17 +11,26 @@ h5,
 h6 {
   font-family: $header-font-family;
   margin: 20px 0 5px 0;
+  font-weight: 300;
 }
 
 h1,
 h2 {
-  font-weight: 300;
   font-size: 48px;
   letter-spacing: 1.54px;
 }
 
 h1 {
   font-size: 64px;
+}
+
+@media screen and (max-width: $BREAKPOINT-SM) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
 
 p,
@@ -57,5 +66,11 @@ img {
       margin-bottom: 15px;
       color: $WATERLOO;
     }
+  }
+}
+
+.vi-links {
+  @media screen and (max-width: $BREAKPOINT-SM) {
+    list-style-type: none;
   }
 }
