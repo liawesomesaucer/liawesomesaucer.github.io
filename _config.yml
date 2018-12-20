@@ -16,6 +16,8 @@ include:
 - public/css
 - public/js
 
+exclude: [vendor]
+
 # Show future events/posts
 future: true
 
