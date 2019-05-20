@@ -2,7 +2,6 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 20px 350px 20px 350px;
     grid-column-gap: 2%;
     grid-row-gap: 20px;
     padding-top: 15px;
@@ -19,6 +18,16 @@
 
     li {
       margin-left: 30px;
+    }
+  }
+  &__card-title {
+    margin-top: 0;
+    font-weight: bold;
+  }
+  &__image {
+    a {
+      height: 180px;
+      display: block;
     }
   }
   &__featured {
@@ -64,6 +73,19 @@
       }
     }
   }
+  &__tag {
+    font-family: $header-font-family;
+    font-weight: 300;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding: 4px 8px;
+    background-color: $WATERLOO-LIGHTEST;
+  }
+  &__tags {
+    margin: 20px 0;
+  }
   &__links {
     p {
       margin-top: 10px;
@@ -77,8 +99,8 @@
     padding-top: 100px;
     left: 0;
     right: 0;
-    box-shadow: 0 2px 20px $WATERLOO;
     text-align: center;
+    border-bottom: 2px solid $PUERTO-RICO;
 
     a {
       line-height: 60px;
@@ -87,9 +109,23 @@
     }
   }
   &__banner {
+    padding-top: 60px;
     width: 100%;
-    min-height: 500px;
-    margin-bottom: 60px;
-    margin-top: 60px;
+    min-height: 400px;
+    position: relative;
+    margin-bottom: 80px;
+  }
+  &__annotation-wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: block;
+    bottom: -35px;
+
+    >small {
+      font-size: 14px;
+      font-family: $text-font-family;
+      color: $WATERLOO;
+    }
   }
 }

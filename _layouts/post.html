@@ -3,16 +3,20 @@ layout: default
 ---
 <div class="vi-post__wrapper">
   {% if page.image %}
-    <div
-      class="vi-post__banner"
-      style="background-image: url('/public/images/{{ page.image }}');
+  <div class="vi-post__banner" style="background-image: url('/public/images/{{ page.image }}');
             background-size: cover;
-            background-position: center;"
-    ></div>
+            background-position: center;">
+    {% if page.imageanno %}
+      <div class="vi-post__annotation-wrapper">
+        <small class="vi-post__annotation">{{page.imageanno}}</small>
+      </div>
+    {% endif %}
+  </div>
   {% endif %}
   <div class="container-fluid vi-container vi-container__post">
     <div class="vi-post__nav"><a href="/">VL</a></div>
     <h1 style="color: {{ page.color }}">{{ page.title }}</h1>
+    <br />
     {{ content }}
   </div>
 </div>

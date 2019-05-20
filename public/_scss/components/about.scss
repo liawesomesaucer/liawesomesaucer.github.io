@@ -1,8 +1,9 @@
-.vi-about {
-  &__section {
-    margin-bottom: 14px;
-  }
-  &__info p {
+.vi-hero {
+  padding: 60px 0;
+  background-color: lighten($PUERTO-RICO, 35);
+  margin-bottom: 60px;
+}
+
+.vi-about__info p {
     color: $BLACK;
-  }
 }
